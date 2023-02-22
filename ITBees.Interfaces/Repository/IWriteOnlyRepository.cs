@@ -16,9 +16,4 @@ namespace ITBees.Interfaces.Repository
         void DeleteData(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);
         void Sql(string sql);
     }
-
-    public interface IWriteOnlyRepository<T, TContext> : IWriteOnlyRepository<T> where TContext : DbContext
-    {
-        void Dispose();
-    }
 }
