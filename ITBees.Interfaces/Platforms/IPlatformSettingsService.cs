@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ITBees.Models.EmailAccounts;
 
 namespace ITBees.Interfaces.Platforms
 {
@@ -6,6 +7,7 @@ namespace ITBees.Interfaces.Platforms
     {
         List<string> GetPlatformDebugEmails();
         Environment GetCurrentEnvironment();
+        EmailAccount GetPlatformDefaultEmailAccount();
     }
 
     public enum Environment
