@@ -8,12 +8,6 @@ namespace ITBees.Interfaces.Platforms
         List<string> GetPlatformDebugEmails();
         Environment GetCurrentEnvironment();
         EmailAccount GetPlatformDefaultEmailAccount();
-    }
-
-    public enum Environment
-    {
-        Dev,
-        Uat,
-        Prod
+        public string GetSetting(string key);
     }
 }
