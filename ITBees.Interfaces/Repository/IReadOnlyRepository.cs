@@ -14,7 +14,11 @@ namespace ITBees.Interfaces.Repository
         ICollection<T> GetData(Expression<Func<T, bool>> predicate,
             params Expression<Func<T, object>>[] includeProperties);
 
-        PaginatedResult<T> GetDataPaginated(Expression<Func<T, bool>> predicate,int page, int elementsPerPage,
+        PaginatedResult<T> GetDataPaginated(Expression<Func<T, bool>> predicate,
+            int page, 
+            int elementsPerPage,
+            string sortColumn,
+            SortOrder sortOrder,
             params Expression<Func<T, object>>[] includeProperties);
 
         int GetDataCount(Expression<Func<T, bool>> predicate);
