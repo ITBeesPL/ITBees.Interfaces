@@ -5,5 +5,5 @@ namespace ITBees.Interfaces.ExternalSalesPlatformIntegration;
 
 public interface INewExternalSalesPlatformIntegrationService
 {
-    Task<NewLeadCreateResultVm> Create(NewLeadIm new1LeadIm);
+    Task<NewLeadCreateResultVm> CreateLead(NewLeadIm new1LeadIm);
 }
