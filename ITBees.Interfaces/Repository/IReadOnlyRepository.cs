@@ -20,6 +20,9 @@ namespace ITBees.Interfaces.Repository
             string sortColumn,
             SortOrder sortOrder,
             params Expression<Func<T, object>>[] includeProperties);
+        PaginatedResult<T> GetDataPaginated(Expression<Func<T, bool>> predicate,
+            SortOptions sortOptions,
+            params Expression<Func<T, object>>[] includeProperties);
 
         int GetDataCount(Expression<Func<T, bool>> predicate);
 
