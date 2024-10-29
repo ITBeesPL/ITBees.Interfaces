@@ -13,7 +13,7 @@ public class SortOptions
     }
 
 
-    public SortOptions(int? page, int elementsPerPage, string? sortColumn, SortOrder? sortOrder)
+    public SortOptions(int? page, int? elementsPerPage, string? sortColumn, SortOrder? sortOrder)
     {
         if (page == null)
         {
