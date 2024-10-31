@@ -15,25 +15,20 @@ public class SortOptions
 
     public SortOptions(int? page, int? elementsPerPage, string? sortColumn, SortOrder? sortOrder)
     {
-        if (page == null)
-        {
-            Page = 1;
-        }
+        Page = page ?? 1;
 
-        if (elementsPerPage == null)
-        {
-            ElementsPerPage = 25;
-        }
+        ElementsPerPage = elementsPerPage ?? 25;
 
         if (sortColumn == null)
         {
             sortColumn = "";
         }
-
-        if (sortOrder == null)
+        else
         {
-            SortOrder = SortOrder.Descending;
+            SortColumn = sortColumn;
         }
+
+        SortOrder = sortOrder ?? SortOrder.Descending;
     }
 
     public int Page { get; set; }
