@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ITBees.Interfaces.CodeGeneration;
 
@@ -6,6 +6,6 @@ namespace ITBees.Interfaces.CodeGeneration;
 /// Use this decorator if You want to have generated 'string?' types when using typescript generator  
 /// </summary>
 [AttributeUsage(AttributeTargets.Property)]
-public class NullableStringPropertyAttribute : Attribute
+public class NullableGuidPropertyAttribute : Attribute
 {
 }
