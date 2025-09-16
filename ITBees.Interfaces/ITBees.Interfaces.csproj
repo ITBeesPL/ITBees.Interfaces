@@ -10,7 +10,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="ITBees.Models" Version="8.0.88" />
+    <PackageReference Include="ITBees.Models" Version="8.0.90" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.4" />
   </ItemGroup>
   
