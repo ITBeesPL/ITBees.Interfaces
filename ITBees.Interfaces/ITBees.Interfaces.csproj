@@ -16,6 +16,7 @@
   
 <!--  <ItemGroup>-->
 <!--    <ProjectReference Include="..\..\ITBees.Models\ITBees.Models\ITBees.Models.csproj" />-->
+<!--    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.4" />-->
 <!--  </ItemGroup>-->
 
 </Project>
